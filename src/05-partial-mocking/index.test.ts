@@ -6,9 +6,9 @@ jest.mock('./index', () => {
     jest.requireActual<typeof import('./index')>('./index');
   return {
     ...originalModule,
-    mockOne: jest.fn(() => {}),
-    mockTwo: jest.fn(() => {}),
-    mockThree: jest.fn(() => {}),
+    mockOne: jest.fn(),
+    mockTwo: jest.fn(),
+    mockThree: jest.fn(),
   };
 });
 
